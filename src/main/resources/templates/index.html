@@ -9,13 +9,31 @@
 	
 	<link href="styles/index.css" rel="stylesheet">
 </head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
-				<h1 class="text-center">Welcome to home page</h1>
-			</div>
-		</div>
+<body style="background-color: #F9F5F6;">
+	<!-- Collapsing Navbar -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="/">Student Management System</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link" th:href="@{/students}">Student Management</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" th:href="@{/students/new}">Add New Student</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	<!-- Navbar code ends... -->
+	
+	<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card mt-5 border-0 pt-5" style="background-color: transparent;">
+		<h1 class="text-center pt-5">Welcome to Student Management</h1>
+		<p class="text-center lead pt-2">A web app that helps you keep track of your students.</p>
 	</div>
 </body>
 </html>

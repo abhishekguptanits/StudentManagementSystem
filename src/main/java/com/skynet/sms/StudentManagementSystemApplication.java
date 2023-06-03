@@ -9,27 +9,10 @@ import com.skynet.sms.entity.Student;
 import com.skynet.sms.repository.StudentRepository;
 
 @SpringBootApplication()
-public class StudentManagementSystemApplication implements CommandLineRunner {
+public class StudentManagementSystemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StudentManagementSystemApplication.class, args);
+		SpringApplication.run(StudentManagementSystemApplication.class);
 	}
 	
-	@Autowired
-	private StudentRepository studentRepository;
-
-	@Override
-	public void run(String... args) throws Exception {
-		/*
-		Student student1 = new Student("Jeremy", "Renner", "jeremy@hawkeye.com");
-		studentRepository.save(student1);
-		
-		Student student2 = new Student("Natasha", "Romanov", "natasha@blackwidow.com");
-		studentRepository.save(student2);
-		
-		Student student3 = new Student("Tony", "Stark", "tonystark@ironman.com");
-		studentRepository.save(student3);
-		*/
-	}
-
 }
